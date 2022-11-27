@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import QuestionList from "./QuestionList"
 import NavBar from "./NavBar"
@@ -8,20 +8,15 @@ import Scores from "./Scores";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route>
-             <Home exact path = "./Home"/>
+      <NavBar/>
+      <Routes>
+        <Route exact path = "/" element={<Home/>}>
         </Route>
-        <Route>
-           <NavBar exact path = "./NavBar"/>
+        <Route exact path = "./QuestionList" element={<QuestionList/>}>
         </Route>
-        <Route>
-           <QuestionList exact path = "./QuestionList" />
-        </Route>
-        <Route>
-           <Scores exact path = "./Scores" />
+        <Route exact path = "/scores" element={<Scores/>}>
        </Route>
-      </Switch>
+      </Routes>
     </div>
   );
 }
