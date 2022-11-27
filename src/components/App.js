@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route exact path = "/" element={<Home/>}>
         </Route>
-        <Route exact path = "./QuestionList" element={<QuestionList/>}>
+        <Route path = "/questionlist" element={<QuestionList/>}>
         </Route>
-        <Route exact path = "/scores" element={<Scores/>}>
+        <Route path = "/scores" element={<Scores/>}>
        </Route>
       </Routes>
     </div>

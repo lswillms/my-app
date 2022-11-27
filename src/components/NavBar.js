@@ -5,20 +5,18 @@ function NavBar() {
     return(
      <div>
         <NavLink
-            to = "/home"
-            exact
+            to = "/"
         >
             Home
         </NavLink>
         <NavLink
             to = "/questionlist"
-            exact
+            
         >
            Questions
         </NavLink>
         <NavLink
             to = "/scores"
-            exact
         >
             Scores
         </NavLink>
