@@ -4,6 +4,8 @@ import Home from "./Home";
 import QuestionList from "./QuestionList"
 import NavBar from "./NavBar"
 import Scores from "./Scores";
+import QuestionForm from "./QuestionForm";
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path = "/questionlist" element={<QuestionList/>}>
         </Route>
         <Route path = "/scores" element={<Scores/>}>
+       </Route>
+        <Route path = "/questionform" element={<QuestionForm/>}>
        </Route>
       </Routes>
     </div>

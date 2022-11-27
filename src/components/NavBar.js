@@ -32,8 +32,9 @@ function NavBar() {
              }}
             
         >
-           Questions
+           New Game
         </NavLink>
+
         <NavLink
             to = "/scores"
             style={linkStyles}
@@ -42,6 +43,15 @@ function NavBar() {
              }}
         >
             Scores
+        </NavLink>
+        <NavLink
+            to = "/questionform"
+            style={linkStyles}
+            activestyle={{
+                background: "darkblue",
+             }}
+        >
+            Submit New Question
         </NavLink>
      </div>
 

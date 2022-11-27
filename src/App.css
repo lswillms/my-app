@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+div.question {
+  padding: "20px";
+  margin: "0 6px 6px";
+  background: "blue";
+  color: "white";
+}
+
+button {
+  padding: "130px";
+  margin: "0 6px 6px";
+  background: "blue";
+  color: "white";
+}

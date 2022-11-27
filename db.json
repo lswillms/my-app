@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 1,
-      "question": "What's the diameter of a basketball hoop in inches",
+      "question": "What's the diameter of a basketball hoop in inches?",
       "option1": "20 inches",
       "option2": "16 inches",
       "option3": "18 inches",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "question": "What team won the very firsthtt NBA game in 1946?",
+      "question": "What team won the very first NBA game in 1946?",
       "option1": "The New York Knicks",
       "option2": "Boston Celtics",
       "option3": "Philadelphia Warriors",
