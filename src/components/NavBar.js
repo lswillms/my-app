@@ -1,23 +1,17 @@
 import React from "react"
 import {NavLink} from "react-router-dom"
+import {Menu} from "semantic-ui-react"
+
 
 function NavBar() {
 
-    const linkStyles = {
-        width: "100px",
-        padding: "12px",
-        margin: "0 6px 6px",
-        background: "blue",
-        textDecoration: "none",
-        color: "white",
-      };
 
     
     return(
      <div>
+     <Menu>
         <NavLink
             to = "/"
-            style={linkStyles}
               activestyle={{
                  background: "darkblue",
              }}
@@ -26,18 +20,15 @@ function NavBar() {
         </NavLink>
         <NavLink
             to = "/questionlist"
-            style={linkStyles}
             activestyle={{
                  background: "darkblue",
              }}
-            
         >
            New Game
         </NavLink>
 
         <NavLink
             to = "/scores"
-            style={linkStyles}
             activestyle={{
                 background: "darkblue",
              }}
@@ -46,13 +37,13 @@ function NavBar() {
         </NavLink>
         <NavLink
             to = "/questionform"
-            style={linkStyles}
             activestyle={{
                 background: "darkblue",
              }}
         >
             Submit New Question
         </NavLink>
+        </Menu>
      </div>
 
     )

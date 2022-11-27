@@ -5,6 +5,7 @@ import QuestionList from "./QuestionList"
 import NavBar from "./NavBar"
 import Scores from "./Scores";
 import QuestionForm from "./QuestionForm";
+import 'semantic-ui-css/semantic.min.css'
 
 
 function App() {
