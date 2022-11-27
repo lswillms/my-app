@@ -5,44 +5,46 @@ import {Menu} from "semantic-ui-react"
 
 function NavBar() {
 
-
-    
     return(
      <div>
-     <Menu>
-        <NavLink
-            to = "/"
+     <Menu className="navigation">
+        <Menu.Item
+            as = {NavLink}
+            exact to = "/"
               activestyle={{
                  background: "darkblue",
              }}
         >
             Home
-        </NavLink>
-        <NavLink
+        </Menu.Item>
+        <Menu.Item
+            as = {NavLink}
             to = "/questionlist"
             activestyle={{
                  background: "darkblue",
              }}
         >
            New Game
-        </NavLink>
+        </Menu.Item>
 
-        <NavLink
+        <Menu.Item
+            as = {NavLink}
             to = "/scores"
             activestyle={{
                 background: "darkblue",
              }}
         >
             Scores
-        </NavLink>
-        <NavLink
+        </Menu.Item>
+        <Menu.Item
+            as = {NavLink}
             to = "/questionform"
             activestyle={{
                 background: "darkblue",
              }}
         >
             Submit New Question
-        </NavLink>
+        </Menu.Item>
         </Menu>
      </div>
 
