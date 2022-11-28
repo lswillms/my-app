@@ -10,17 +10,17 @@ function QuestionItem( { question, option1, option2, option3 }) {
     return(
      <div className="question-list">
        <div>
-        <Header className = "question"> {question}</Header>
+        <Header className = "ui header"> {question}</Header>
         </div>
             <div className="answer">
                 <div>
-                    <Button variant="contained" className="choices"> {option1}</Button>
+                    <Button variant="contained" className="ui active button"> {option1}</Button>
                 </div>
                 <div>
-                    <Button variant="contained" className="choices"> {option2}</Button>
+                    <Button variant="contained" className="ui active button"> {option2}</Button>
                 </div>
                 <div>
-                    <Button  variant="contained"className="choices"> {option3}</Button>
+                    <Button  variant="contained"className="ui active button"> {option3}</Button>
                 </div>
             </div>
         </div>

@@ -1,27 +1,6 @@
-import React, { useEffect, useState } from "react"
-import QuestionItem from "./QuestionItem"
+import React from "react"
 
-function QuestionList() {
-
-    const [ questions, setQuestions] = useState([])
-
-    useEffect(() => {
-        fetch("http://localhost:3000/questions")
-        .then((resp) => resp.json())
-        .then((data) => setQuestions(data))
-    }, [])
-
-    const questionToDisplay = questions.map((question) => (
-        <QuestionItem
-            key = {question.id}
-            question = {question.question}
-            option1 = {question.option1}
-            option2 = {question.option2}
-            option3 = {question.option3}
-            answer = {question.answer}
-            />
-    ))
-        
+function QuestionList({questionToDisplay}) {
 
     
     return (

@@ -16,13 +16,22 @@ button {
   color: "white";
 }
 
-.choices {
-  padding: "130px";
+h1{
+  font-size: 50px;
+  text-align: center
 }
 
-Menu {
-  padding: "130px";
-  margin: "0 6px 6px";
-  background: "blue";
-  color: "white"
+div.ui.header{
+  size:45px ;
+  color: black;
+  padding: 10px;
+
+}
+
+
+button.ui.active.button {
+  padding-bottom: 10px;
+  background: gray;
+  margin-bottom: 10px;
+ 
 }
