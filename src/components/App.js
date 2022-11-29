@@ -30,6 +30,9 @@ function App() {
           />
   ))
 
+  function handleAddQuestion(newQuestion) {
+    setQuestions([... questions, newQuestion])
+  }
   return (
     <div className="App">
       <NavBar/>
@@ -40,7 +43,7 @@ function App() {
         </Route>
         <Route path = "/scores" element={<Scores/>}>
        </Route>
-        <Route path = "/questionform" element={<QuestionForm questions = {questions}/>}>
+        <Route path = "/questionform" element={<QuestionForm questions = {questions} handleAddQuestion = {handleAddQuestion}/>}>
        </Route>
       </Routes>
     </div>
