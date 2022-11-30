@@ -28,12 +28,10 @@ div.ui.header{
 
 }
 
-
 button.ui.active.button {
   padding-bottom: 10px;
   background: gray;
   margin-bottom: 10px;
- 
 }
 
 input{
@@ -42,3 +40,4 @@ input{
   width: 250px;
   color: red
 }
+

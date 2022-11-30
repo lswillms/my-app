@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background: gainsboro
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.question {
+  padding: "10px";
+  margin: "0 6px 6px";
+  background: "blue";
+  color: "white";
+}
+
+button {
+  padding: "10px";
+  margin: "0 6px 6px";
+  background: "blue";
+  color: "white";
+}

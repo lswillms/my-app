@@ -2,11 +2,11 @@
   "questions": [
     {
       "id": 1,
-      "question": "What's the diameter of a basketball hoop in inches?",
+      "question": "What's the diameter of a basketball hoop in inches",
       "option1": "20 inches",
       "option2": "16 inches",
       "option3": "18 inches",
-      "answer": "18 inches"
+      "answer": "option3"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "option1": "Evander Holyfield",
       "option2": "Joe Frazier",
       "option3": "Sugar Ray Robinson",
-      "answer": "Joe Frazier"
+      "answer": "option2"
     },
     {
       "id": 3,
@@ -22,15 +22,15 @@
       "option1": "Snowboarding",
       "option2": "Skiing",
       "option3": "Sledding",
-      "answer": "Snowboarding"
+      "answer": "option1"
     },
     {
       "id": 4,
-      "question": "What team won the very first NBA game in 1946?",
+      "question": "What team won the very firsthtt NBA game in 1946?",
       "option1": "The New York Knicks",
       "option2": "Boston Celtics",
       "option3": "Philadelphia Warriors",
-      "answer": "The New York Knicks"
+      "answer": "option1"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "option1": "Lisa Leslie",
       "option2": "Candace Parker",
       "option3": "Brittney Griner",
-      "answer": "Brittney Griner"
+      "answer": "option3"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "option1": "Sandy Koufax",
       "option2": "Nolan Ryan",
       "option3": "Walter Johnson",
-      "answer": "Sandy Koufax"
+      "answer": "option1"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "option1": "turf",
       "option2": "pitch",
       "option3": "court",
-      "answer": "pitch"
+      "answer": "option2"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "option1": "Mia Hamm",
       "option2": "Abby Wambach",
       "option3": "Brandi Chastain",
-      "answer": "Mia Hamm"
+      "answer": "option1"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "option1": "San Francisco 49ers",
       "option2": "Chicago Bears",
       "option3": "The Dallas Cowboys",
-      "answer": "The Dallas Cowboys"
+      "answer": "option3"
     },
     {
       "id": 10,
@@ -78,63 +78,7 @@
       "option1": "Baseball",
       "option2": "Soccer",
       "option3": "Football",
-      "answer": "Soccer"
-    },
-    {
-      "question": "What day is today?",
-      "option1": "Monday",
-      "option2": "Tuesday",
-      "option3": "Wednesday",
-      "answer": "Monday",
-      "id": 11
-    },
-    {
-      "question": "",
-      "option1": "",
-      "option2": "",
-      "option3": "",
-      "answer": "",
-      "id": 12
-    },
-    {
-      "question": "What is today?",
-      "option1": "Mond",
-      "option2": "tye",
-      "option3": "eu",
-      "answer": "tye",
-      "id": 13
-    },
-    {
-      "question": "What is today?",
-      "option1": "Mond",
-      "option2": "tye",
-      "option3": "eu",
-      "answer": "tye",
-      "id": 14
-    },
-    {
-      "question": "What is today?",
-      "option1": "Mond",
-      "option2": "tye",
-      "option3": "eu",
-      "answer": "tye",
-      "id": 15
-    },
-    {
-      "question": "What is today?",
-      "option1": "Mond",
-      "option2": "tye",
-      "option3": "eu",
-      "answer": "tye",
-      "id": 16
-    },
-    {
-      "question": "What is today?",
-      "option1": "Mond",
-      "option2": "tye",
-      "option3": "eu",
-      "answer": "tye",
-      "id": 17
+      "answer": "option2"
     }
   ]
 }

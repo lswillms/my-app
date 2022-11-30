@@ -49,7 +49,7 @@ function QuestionForm({ handleAddQuestion }) {
                 </label>
                 </div>
 
-                <div class="ui input focus">
+                <div className="ui input focus">
                  <label>
                         Option 1:
                     <input
@@ -61,7 +61,7 @@ function QuestionForm({ handleAddQuestion }) {
                  </label>
                 </div>
 
-                <div class="ui input focus">
+                <div className="ui input focus">
                  <label>
                     Option 2:
                     <input
@@ -73,7 +73,7 @@ function QuestionForm({ handleAddQuestion }) {
                  </label>
                  </div>
                  
-                 <div class="ui input focus">
+                 <div className="ui input focus">
                   <label>
                     Option 3:
                     <input
@@ -85,7 +85,7 @@ function QuestionForm({ handleAddQuestion }) {
                  </label>
                 </div>
                 
-                <div class="ui input focus">
+                <div className="ui input focus">
                  <label>
                     Answer: 
                    <input

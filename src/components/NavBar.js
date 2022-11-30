@@ -10,7 +10,7 @@ function NavBar() {
      <Menu className="navigation">
         <Menu.Item
             as = {NavLink}
-            exact to = "/"
+             to = "/"
               activestyle={{
                  background: "darkblue",
              }}
@@ -25,16 +25,6 @@ function NavBar() {
              }}
         >
            New Game
-        </Menu.Item>
-
-        <Menu.Item
-            as = {NavLink}
-            to = "/scores"
-            activestyle={{
-                background: "darkblue",
-             }}
-        >
-            Scores
         </Menu.Item>
         <Menu.Item
             as = {NavLink}
