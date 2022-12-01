@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import { Header, Input } from "semantic-ui-react";
+import { Header } from "semantic-ui-react";
+
 
 
 function QuestionForm({ handleAddQuestion }) {
@@ -13,6 +14,7 @@ function QuestionForm({ handleAddQuestion }) {
 
     function handleSubmit(e) {
         e.preventDefault()
+    
         const formData = {
             question:question,
             option1: option1,
@@ -30,8 +32,15 @@ function QuestionForm({ handleAddQuestion }) {
             })
             .then((resp) => resp.json())
             .then((newQuestion) => handleAddQuestion(newQuestion))
-        }
-    
+
+         setQuestion("")
+         setOption1("")
+         setOption2("")
+         setOption3("")
+         setAnswer("")
+    }
+        
+
 
     return (
         <div className="form">
@@ -45,6 +54,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "question"
                         value = {question}
                         onChange={(e) => setQuestion(e.target.value)}
+                        defaultValue = ""
                     />
                 </label>
                 </div>
@@ -57,6 +67,7 @@ function QuestionForm({ handleAddQuestion }) {
                       name = "option1"
                       value = {option1}
                       onChange={(e) => setOption1(e.target.value)}
+                      defaultValue = ""
                     />
                  </label>
                 </div>
@@ -69,6 +80,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "option2"
                         value = {option2}
                         onChange ={(e) => setOption2(e.target.value)}
+                        defaultValue = ""
                     />
                  </label>
                  </div>
@@ -81,6 +93,7 @@ function QuestionForm({ handleAddQuestion }) {
                          name = "option3"
                          value = {option3}
                          onChange = {(e) => setOption3(e.target.value)}
+                         defaultValue = ""
                     />
                  </label>
                 </div>
@@ -93,6 +106,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "answer"
                         value = {answer}
                         onChange = {(e) => setAnswer(e.target.value)}
+                        defaultValue = ""
                     />
                   </label>
                  </div>
