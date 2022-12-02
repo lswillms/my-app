@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import { Header } from "semantic-ui-react";
 
-
-
 function QuestionForm({ handleAddQuestion }) {
 
     const [ question, setQuestion] = useState("")
@@ -54,7 +52,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "question"
                         value = {question}
                         onChange={(e) => setQuestion(e.target.value)}
-                        defaultValue = ""
+                       
                     />
                 </label>
                 </div>
@@ -67,7 +65,7 @@ function QuestionForm({ handleAddQuestion }) {
                       name = "option1"
                       value = {option1}
                       onChange={(e) => setOption1(e.target.value)}
-                      defaultValue = ""
+                      
                     />
                  </label>
                 </div>
@@ -80,7 +78,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "option2"
                         value = {option2}
                         onChange ={(e) => setOption2(e.target.value)}
-                        defaultValue = ""
+                        
                     />
                  </label>
                  </div>
@@ -93,7 +91,7 @@ function QuestionForm({ handleAddQuestion }) {
                          name = "option3"
                          value = {option3}
                          onChange = {(e) => setOption3(e.target.value)}
-                         defaultValue = ""
+                         
                     />
                  </label>
                 </div>
@@ -106,7 +104,7 @@ function QuestionForm({ handleAddQuestion }) {
                         name = "answer"
                         value = {answer}
                         onChange = {(e) => setAnswer(e.target.value)}
-                        defaultValue = ""
+                       
                     />
                   </label>
                  </div>

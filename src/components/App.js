@@ -38,9 +38,14 @@ function App() {
   }
 
   function handleAddQuestion(newQuestion) {
-    setQuestions([... questions, newQuestion])
+    setQuestions([...questions, newQuestion])
   }
 
+  // if (nextQuestion < questions.length) {
+  //   setCurrentQuestion(nextQuestion);
+  // } else {
+  //   alert('you reached the end of the quiz');
+  // }
   
   return (
     <div className="App">

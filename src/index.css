@@ -21,3 +21,7 @@ button {
   background: "blue";
   color: "white";
 }
+
+.ui.active.button {
+  background: green
+}
