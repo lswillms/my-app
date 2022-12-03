@@ -1,21 +1,5 @@
 {
-  "questions": [
-    {
-      "id": 1,
-      "question": "What's the diameter of a basketball hoop in inches?",
-      "option1": "20 inches",
-      "option2": "16 inches",
-      "option3": "18 inches",
-      "answer": "18 inches"
-    },
-    {
-      "id": 2,
-      "question": "Which boxer fought against Muhammad Ali and won?",
-      "option1": "Evander Holyfield",
-      "option2": "Joe Frazier",
-      "option3": "Sugar Ray Robinson",
-      "answer": "Joe Frazier"
-    },
+  "questionslist": [
     {
       "id": 3,
       "question": "In which winter sport are the terms “stale fish” and “mule kick” used?",

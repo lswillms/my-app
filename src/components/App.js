@@ -13,8 +13,9 @@ function App() {
   const [ questions, setQuestions] = useState([])
   const [ start, setStart] = useState(0)
   
+  
     useEffect(() => {
-        fetch("http://localhost:3000/questions")
+        fetch("http://localhost:3000/questionslist")
         .then((resp) => resp.json())
         .then((data) => setQuestions(data))
     }, [])
@@ -22,12 +23,12 @@ function App() {
     const allQuestionsToDisplay = questions.map((question) => (
       <QuestionItem
           key = {question.id}
-          question = {question.question}
-          option1 = {question.option1}
-          option2 = {question.option2}
-          option3 = {question.option3}
-          answer = {question.answer}
+          question = {question}
+          
           nextQuestion = {nextQuestion}
+         handleDeleteList = {handleDeleteList}
+          
+      
           />
   ))
 
@@ -41,6 +42,11 @@ function App() {
     setQuestions([...questions, newQuestion])
   }
 
+  function handleDeleteList(deletedItem) {
+     const listAfterDelete= questions.filter((question) => question.id !== deletedItem.id)
+       setQuestions((listAfterDelete))
+}
+
   // if (nextQuestion < questions.length) {
   //   setCurrentQuestion(nextQuestion);
   // } else {
@@ -53,7 +59,7 @@ function App() {
       <Routes>
         <Route exact path = "/" element={<Home/>}>
         </Route>
-        <Route path = "/questionlist" element={<QuestionList  questionToDisplay = {questionToDisplay} />}> 
+      <Route path = "/questionlist" element={<QuestionList questionToDisplay = {questionToDisplay} questions = {questions}/>}> 
         </Route>
         <Route path = "/questionform" element={<QuestionForm questions = {questions} handleAddQuestion = {handleAddQuestion}/>}>
        </Route>

@@ -21,7 +21,7 @@ function QuestionForm({ handleAddQuestion }) {
             answer: answer
         }
 
-        fetch(" http://localhost:3000/questions", {
+        fetch(" http://localhost:3000/questionslist", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -37,13 +37,15 @@ function QuestionForm({ handleAddQuestion }) {
          setOption3("")
          setAnswer("")
     }
-        
+    
+    
 
 
     return (
         <div className="form">
             <Header>Submit New Question</Header>
             <form onSubmit = {handleSubmit} className="new question">
+           
                 <div className="ui input focus">
                 <label>
                     Question:  
@@ -56,7 +58,7 @@ function QuestionForm({ handleAddQuestion }) {
                     />
                 </label>
                 </div>
-
+             <br></br>
                 <div className="ui input focus">
                  <label>
                         Option 1:
@@ -69,8 +71,8 @@ function QuestionForm({ handleAddQuestion }) {
                     />
                  </label>
                 </div>
-
-                <div className="ui input focus">
+                <br></br>
+                <span className="ui input focus">
                  <label>
                     Option 2:
                     <input
@@ -81,8 +83,8 @@ function QuestionForm({ handleAddQuestion }) {
                         
                     />
                  </label>
-                 </div>
-                 
+                 </span>
+                 <br></br>
                  <div className="ui input focus">
                   <label>
                     Option 3:
@@ -95,10 +97,10 @@ function QuestionForm({ handleAddQuestion }) {
                     />
                  </label>
                 </div>
-                
+                <br></br>
                 <div className="ui input focus">
                  <label>
-                    Answer: 
+                    Answer:
                    <input
                         type = "text"
                         name = "answer"
@@ -108,7 +110,9 @@ function QuestionForm({ handleAddQuestion }) {
                     />
                   </label>
                  </div>
-                 <button>Submit</button>
+                 <br></br>
+                 <button className="submit">Submit</button>
+                 <br></br>
         </form>
         </div>
 
