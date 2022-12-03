@@ -24,7 +24,6 @@ function App() {
       <QuestionItem
           key = {question.id}
           question = {question}
-          
           nextQuestion = {nextQuestion}
          handleDeleteList = {handleDeleteList}
           
@@ -47,13 +46,13 @@ function App() {
        setQuestions((listAfterDelete))
 }
 
-  // if (nextQuestion < questions.length) {
-  //   setCurrentQuestion(nextQuestion);
-  // } else {
-  //   alert('you reached the end of the quiz');
-  // }
+  //     if (nextQuestion < questions.length) {
+  //        setStart(nextQuestion);
+  //      } else {
+  //       alert('you reached the end of the quiz');
+  //      }
   
-  return (
+  // return (
     <div className="App">
       <NavBar/>
       <Routes>

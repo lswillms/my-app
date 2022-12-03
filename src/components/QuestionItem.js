@@ -6,19 +6,19 @@ function QuestionItem( { question, nextQuestion,handleDeleteList}) {
 
     const [ selectedAnswer, setSelectedAnswer] = useState("")
 
-    const inCorrectAnswer  = () => <h1>TRY AGAIN!</h1>
-    const correctAnswer  = ()=> <h1> CORRECT!</h1>
+   
 
     function handleAnswer(e) {
-        setSelectedAnswer(e.target.value)
+       setSelectedAnswer(e.target.value)
         
         if (selectedAnswer === question.answer) {
-            console.log(correctAnswer)
+            alert("Correct")
         } else {
-            console.log(inCorrectAnswer)
+            alert("Try again")
         }
     }
    
+    
     function handleDeleteClick() {
         fetch(`http://localhost:3000/questionslist/${question.id}`, {
           method: "DELETE",
@@ -32,20 +32,18 @@ function QuestionItem( { question, nextQuestion,handleDeleteList}) {
             <div>
                 <Header className = "ui header"> {question.question}</Header>
             </div>     
-            <div >
-                <Button className= "ui active button"
-                  onChange= {handleAnswer}
-                  value = {question.option1}
-                  variant="contained"
-        
-                >
-                  {question.option1}
-                </Button>
+            <div>
+                <Button className="ui active button" 
+                    onClick= {handleAnswer}  
+                    value = {question.option1}
+                    variant="contained"
+                > 
+                    {question.option1}
+                 </Button>
             </div>
             <div>
                 <Button className="ui active button" 
                     onClick= {handleAnswer}  
-                   
                     value = {question.option2}
                     variant="contained"
                 > 
@@ -55,7 +53,6 @@ function QuestionItem( { question, nextQuestion,handleDeleteList}) {
             <div>
                 <Button  className="ui active button" 
                     onClick= {handleAnswer}
-                    
                     value = {question.option3}
                     variant="contained"
                 > 
