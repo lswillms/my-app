@@ -35,6 +35,12 @@ function App() {
 
   function nextQuestion(e) {
     setStart(start + 1)
+
+    if (start < questions.length) {
+      setStart((start) => start + 1);
+    } else {
+     alert('you reached the end of the quiz');
+    }
   }
 
   function handleAddQuestion(newQuestion) {
@@ -46,13 +52,9 @@ function App() {
        setQuestions((listAfterDelete))
 }
 
-  //     if (nextQuestion < questions.length) {
-  //        setStart(nextQuestion);
-  //      } else {
-  //       alert('you reached the end of the quiz');
-  //      }
+      
   
-  // return (
+  return (
     <div className="App">
       <NavBar/>
       <Routes>
