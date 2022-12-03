@@ -26,20 +26,18 @@ function App() {
           question = {question}
           nextQuestion = {nextQuestion}
          handleDeleteList = {handleDeleteList}
-          
-      
           />
   ))
 
   const questionToDisplay = allQuestionsToDisplay.slice(start, start + 1)
 
-  function nextQuestion(e) {
-    setStart(start + 1)
+  function nextQuestion() {
 
-    if (start < questions.length) {
-      setStart((start) => start + 1);
+   const nextUp = start + 1
+    if (nextUp < questions.length) {
+      setStart(nextUp);
     } else {
-     alert('you reached the end of the quiz');
+     alert('You have reached the end of the quiz');
     }
   }
 
