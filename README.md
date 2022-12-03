@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# The Sports Trivia Genie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Test your friends and family sports trivia knowledge.
 
-## Available Scripts
+## App Inspirations
 
-In the project directory, you can run:
+Do you have that friend and/or family members that thinks they know more about sports than anyone else? Do you have a desire to have them prove it.
 
-### `npm start`
+### Features
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
