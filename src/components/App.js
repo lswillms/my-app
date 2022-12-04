@@ -26,6 +26,7 @@ function App() {
           question = {question}
           nextQuestion = {nextQuestion}
          handleDeleteList = {handleDeleteList}
+        reset = {reset}
           />
   ))
 
@@ -37,9 +38,14 @@ function App() {
     if (nextUp < questions.length) {
       setStart(nextUp);
     } else {
-     alert('You have reached the end of the quiz');
+     alert('You have reached the end of the quiz') 
     }
   }
+
+  function reset () {
+    setStart(0)
+  }
+
 
   function handleAddQuestion(newQuestion) {
     setQuestions([...questions, newQuestion])
