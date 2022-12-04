@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import {Button, Header} from "semantic-ui-react"
 
 
@@ -7,17 +7,21 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
     const [ selectedAnswer, setSelectedAnswer] = useState("")
 
 
-    const handleAnswer =  (e)  => {
+    function handleAnswer(e) {
         setSelectedAnswer(e.target.value)
-    
+    }
+
+        useEffect(()=>{
         if (selectedAnswer === question.answer) {
             alert("Correct")
         } else {
             alert("Try again")
-        }
     }
-    
-    function handleDeleteClick() {
+}, [selectedAnswer, question.answer])
+
+
+
+      function handleDeleteClick() {
         fetch(`http://localhost:3000/questionslist/${question.id}`, {
           method: "DELETE",
         })
@@ -60,8 +64,8 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
             <div>
                     <Button onClick={handleDeleteClick}> <i className="trash alternate icon"></i> </Button>
                     <Button onClick = {nextQuestion}> <i className="angle double right icon"></i> </Button>
-                    <Button onClick={reset}><i className = "redo alternate icon"></i></Button>
-    </div>
+                    <Button onClick={reset}><i className = "redo icon"></i></Button>
+            </div>
     </div>
 )
 }
