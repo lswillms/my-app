@@ -31,7 +31,7 @@ function App() {
   ))
 
   const questionToDisplay = allQuestionsToDisplay.slice(start, start + 1)
-
+  
   function nextQuestion() {
 
    const nextUp = start + 1

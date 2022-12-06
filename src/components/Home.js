@@ -7,7 +7,7 @@ function Home() {
 
     return(
     <div>
-      <img src = "public/Images/sports.jpeg" alt = "sports"/>
+      <img src ="/Images/sports.jpeg"alt = "sports"/>
         <Header className="header">
           <h1>Sports Trivia Genie</h1>
         </Header>

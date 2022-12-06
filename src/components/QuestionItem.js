@@ -1,25 +1,28 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import {Button, Header} from "semantic-ui-react"
 
 
 function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
 
     const [ selectedAnswer, setSelectedAnswer] = useState("")
-
-
-    function handleAnswer(e) {
+  
+     const handleAnswer= (e) => {
         setSelectedAnswer(e.target.value)
+     }
+    
+    function createClass(option) {
+        console.log(option)
+        if(option === selectedAnswer) {
+            if(selectedAnswer === question.answer) {
+                return "ui active button correct"
+            }else {
+                return "ui active button wrong"
+            }
+        }else {
+            return "ui active button"
+        }
     }
-
-        useEffect(()=>{
-        if (selectedAnswer === question.answer) {
-            alert("Correct")
-        } else {
-            alert("Try again")
-    }
-}, [selectedAnswer, question.answer])
-
-
+    
 
       function handleDeleteClick() {
         fetch(`http://localhost:3000/questionslist/${question.id}`, {
@@ -35,8 +38,8 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
                 <Header className = "ui header"> {question.question}</Header>
             </div>     
             <div>
-                <Button className="ui active button" 
-                    onClick= {handleAnswer}  
+                <Button className= {createClass(question.option1)}
+                    onClick= {handleAnswer}
                     value = {question.option1}
                     variant="contained"
                 > 
@@ -44,7 +47,7 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
                  </Button>
             </div>
             <div>
-                <Button className="ui active button" 
+                <Button className={createClass(question.option2)} 
                     onClick= {handleAnswer}  
                     value = {question.option2}
                     variant="contained"
@@ -53,7 +56,7 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
                  </Button>
             </div>
             <div>
-                <Button  className="ui active button" 
+                <Button  className={createClass(question.option3)}
                     onClick= {handleAnswer}
                     value = {question.option3}
                     variant="contained"
