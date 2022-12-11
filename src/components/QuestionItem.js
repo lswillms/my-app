@@ -11,7 +11,6 @@ function QuestionItem( { question, nextQuestion,handleDeleteList, reset}) {
      }
     
     function createClass(option) {
-        console.log(option)
         if(option === selectedAnswer) {
             if(selectedAnswer === question.answer) {
                 return "ui active button correct"
